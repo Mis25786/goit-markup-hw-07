@@ -218,7 +218,7 @@ ul {
 
 /* фільтри */
 
-.sait-section {
+.sait-section__wrapper {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -237,7 +237,7 @@ ul {
   overflow: hidden;
 }
 
-.site-filters {
+.site-filters__box {
   display: flex;
   margin-bottom: 50px;
   gap: 8px;
@@ -247,8 +247,8 @@ ul {
   cursor: pointer;
 }
 
-.site-filters .site-button:hover,
-.site-filters .site-button:focus {
+.site-filters__button:hover,
+.site-filters__button:focus {
   background-color: var(--accent-color);
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -259,7 +259,7 @@ ul {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-button {
+.site-filters__button {
   text-align: center;
   align-items: center;
   padding: 6px 22px;
@@ -277,35 +277,35 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-one {
+/* .site-filters__button-one {
   width: 73px;
 }
 
-.button-two {
+.site-filters__button-two {
   width: 125px;
 }
 
-.button-three {
+.site-filters__button-three {
   width: 112px;
 }
 
-.button-four {
+.site-filters__button-four {
   width: 103px;
 }
 
-.button-five {
+.site-filters__button-five {
   width: 130px;
-}
+} */
 
 /* card */
 
-.card {
+.card-set__wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.aside {
+.card-set__aside {
   display: block;
   width: calc((100% - 60px) / 3);
 }
@@ -739,13 +739,12 @@ ul {
 
 /* підвал */
 
-.contacts {
-  display: flex;
+.peage-footer__wrapper {
   padding: 60px 0;
   background-color: var(--color-bg-promo-footer);
 }
 
-.container-footer {
+.peage-footer__container {
   display: flex;
   align-items: baseline;
   gap: 70px;
@@ -764,14 +763,18 @@ ul {
   margin-bottom: 20px;
 }
 
-.contacts-adress:hover,
-.contacts-adress:focus {
+.contact-footer__box {
+  margin-bottom: 9px;
+}
+
+.contact-footer__adress:hover,
+.contact-footer__adress:focus {
   background-color: var(--color-bg-promo-footer);
   color: var(--accent-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-adress {
+.contact-footer__adress {
   text-decoration: none;
   font-style: normal;
   line-height: 1.71;
@@ -779,18 +782,14 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-link:hover,
-.contacts-link:focus {
+.contact-footer__link:hover,
+.contact-footer__link:focus {
   background-color: var(--color-bg-promo-footer);
   color: var(--accent-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-box {
-  margin-bottom: 9px;
-}
-
-.contacts-link {
+.contact-footer__link {
   margin-bottom: 9px;
 
   line-height: 1.71;
@@ -802,11 +801,7 @@ ul {
 
 /* підвал соц-мережі */
 
-/* .socials-footer-box {
-  margin-right: 93px;
-} */
-
-.socials-title {
+.socials-footer__title {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
@@ -818,12 +813,12 @@ ul {
   color: #ffffff;
 }
 
-.socials-footer {
+.socials-footer__box {
   display: flex;
   gap: 10px;
 }
 
-.footer-link {
+.socials-footer__link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -839,13 +834,13 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-link:hover,
-.footer-link:focus {
+.socials-footer__link:hover,
+.socials-footer__link:focus {
   background-color: var(--accent-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-footer {
+.socials-footer__icon {
   width: 20px;
   height: 20px;
   fill: var(--secondary-color-socials);
@@ -853,7 +848,7 @@ ul {
 
 /* Підпишіться на розсилку */
 
-.mailing-title {
+.mailing-footer__title {
   font-family: "Roboto" sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -865,16 +860,16 @@ ul {
   color: #ffffff;
 }
 
-.mailing-footer {
+.mailing-footer__box {
   display: flex;
 }
 
-.form-mailing-footer {
+.mailing-footer__row {
   width: 358px;
   height: 50px;
 }
 
-.form-mailing-footer input {
+.mailing-footer__input {
   width: 358px;
   height: 50px;
   margin: 0;
@@ -887,15 +882,15 @@ ul {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mailing-input:hover,
-.mailing-input:focus {
+.mailing-footer__input:hover,
+.mailing-footer__input:focus {
   color: #ffffff;
   border-color: var(--accent-color);
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mailing-btn-footer {
+.footer-button__btn {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
@@ -921,18 +916,12 @@ ul {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mailing-btn-footer:hover,
-.mailing-btn-footer:focus {
+.footer-button__btn:hover,
+.footer-button__btn:focus {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mailing-text {
-}
-
-.mailing-icon {
 }
 
 /* модальне вікно */
