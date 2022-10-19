@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
@@ -73,112 +73,117 @@
       <!--реклама-->
 
       <section class="promo">
-        <div class="container promo-box">
-          <h1 class="promo-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="promo-button" type="button" data-modal-open>
-            Замовити послугу
-          </button>
+        <div class="promo__wrapper">
+          <div class="container promo__box">
+            <h1 class="promo__title">Ефективні рішення для вашого бізнесу</h1>
+            <button class="promo__button" type="button" data-modal-open>
+              Замовити послугу
+            </button>
+          </div>
         </div>
       </section>
 
       <!--наші особливості-->
 
-      <section class="section">
-        <div class="container subtitle">
-          <ul class="category">
-            <li class="item">
-              <div class="section-item-box">
-                <svg class="item-icon" width="70" height="70">
-                  <use href="./sprite.svg#icon-antenna"></use>
-                </svg>
-              </div>
-              <h3 class="section-title">увага до деталей</h3>
-              <p class="text">
-                Ідейні міркування, і навіть початок повсякденної роботи з
-                формування позиції.
-              </p>
-            </li>
+      <section class="features">
+        <div class="features__wrapper">
+          <div class="container features__subtitle">
+            <ul class="features__category">
+              <li class="features-card">
+                <div class="features__box">
+                  <svg class="features__icon" width="70" height="70">
+                    <use href="./sprite.svg#icon-antenna"></use>
+                  </svg>
+                </div>
+                <h3 class="features__title">увага до деталей</h3>
+                <p class="features__text">
+                  Ідейні міркування, і навіть початок повсякденної роботи з
+                  формування позиції.
+                </p>
+              </li>
 
-            <li class="item">
-              <div class="section-item-box">
-                <svg class="item-icon" width="70" height="70">
-                  <use href="./sprite.svg#icon-clock"></use>
-                </svg>
-              </div>
-              <h3 class="section-title">пунктуальність</h3>
-              <p class="text">
-                Завдання організації, особливо рамки і місце навчання кадрів
-                тягне у себе.
-              </p>
-            </li>
+              <li class="features-card">
+                <div class="features__box">
+                  <svg class="features__icon" width="70" height="70">
+                    <use href="./sprite.svg#icon-clock"></use>
+                  </svg>
+                </div>
+                <h3 class="features__title">пунктуальність</h3>
+                <p class="features__text">
+                  Завдання організації, особливо рамки і місце навчання кадрів
+                  тягне у себе.
+                </p>
+              </li>
 
-            <li class="item">
-              <div class="section-item-box">
-                <svg class="item-icon" width="70" height="70">
-                  <use href="./sprite.svg#icon-diagram"></use>
-                </svg>
-              </div>
-              <h3 class="section-title">планування</h3>
-              <p class="text">
-                Так само консультація з широким активом значною мірою зумовлює.
-              </p>
-            </li>
+              <li class="features-card">
+                <div class="features__box">
+                  <svg class="features__icon" width="70" height="70">
+                    <use href="./sprite.svg#icon-diagram"></use>
+                  </svg>
+                </div>
+                <h3 class="features__title">планування</h3>
+                <p class="features__text">
+                  Так само консультація з широким активом значною мірою
+                  зумовлює.
+                </p>
+              </li>
 
-            <li class="item">
-              <div class="section-item-box">
-                <svg class="item-icon" width="70" height="70">
-                  <use href="./sprite.svg#icon-astronaut"></use>
-                </svg>
-              </div>
-              <h3 class="section-title">сучасні технології</h3>
-              <p class="text">
-                Значимість цих проблем настільки очевидна, що реалізація
-                планових завдань.
-              </p>
-            </li>
-          </ul>
+              <li class="features-card">
+                <div class="features__box">
+                  <svg class="features__icon" width="70" height="70">
+                    <use href="./sprite.svg#icon-astronaut"></use>
+                  </svg>
+                </div>
+                <h3 class="features__title">сучасні технології</h3>
+                <p class="features__text">
+                  Значимість цих проблем настільки очевидна, що реалізація
+                  планових завдань.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <!--чим займаємось галерея-->
 
       <section class="galery">
-        <div class="container">
-          <h2 class="galery-title">Чим ми займаємося</h2>
-          <ul class="galery-item">
-            <li class="galery-item-icon">
+        <div class="galery__wrapper container">
+          <h2 class="galery__title">Чим ми займаємося</h2>
+          <ul class="galery__item">
+            <li class="galery__icon">
               <img
                 src="./images/box1.jpg"
                 alt="людина займаєтся програмуванням сайтів"
                 width="370"
                 height="294"
               />
-              <div class="galery-box">
-                <p class="galery-text">Десктопні додатки</p>
+              <div class="galery__box">
+                <p class="galery__text">Десктопні додатки</p>
               </div>
             </li>
 
-            <li class="galery-item-icon">
+            <li class="galery__icon">
               <img
                 src="./images/box2.jpg"
                 alt="людина займаєтся розробкою мобільних додатків"
                 width="370"
                 height="294"
               />
-              <div class="galery-box">
-                <p class="galery-text">Мобільні додатки</p>
+              <div class="galery__box">
+                <p class="galery__text">Мобільні додатки</p>
               </div>
             </li>
 
-            <li class="galery-item-icon">
+            <li class="galery__icon">
               <img
                 src="./images/box3.jpg"
                 alt="людина робить дизайн для сайта"
                 width="370"
                 height="294"
               />
-              <div class="galery-box">
-                <p class="galery-text">Дизайнерські рішення</p>
+              <div class="galery__box">
+                <p class="galery__text">Дизайнерські рішення</p>
               </div>
             </li>
           </ul>
@@ -188,294 +193,315 @@
       <!--герої-->
 
       <section class="hero">
-        <div class="container">
-          <h2 class="hero-title">Наша команда</h2>
-          <ul class="hero-box">
-            <li class="hero-meta">
-              <img
-                class="hero-foto"
-                src="./images/igordemjanko.jpg"
-                alt="чоловік в окулярах"
-                width="270"
-                height="260"
-              />
-              <h3 class="hero-name">Ігор Дем'яненко</h3>
-              <p class="hero-text">Product Designer</p>
-              <div>
-                <ul class="socials">
-                  <li class="socials-item">
-                    <a class="socials-link" href="#">
-                      <svg
-                        class="socials-icon instagram"
-                        width="20"
-                        height="20"
-                      >
-                        <use href="./sprite.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="socials-item">
-                    <a class="socials-link" href="#">
-                      <svg
-                        class="socials-icon instagram"
-                        width="20"
-                        height="20"
-                      >
-                        <use href="./sprite.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="socials-item">
-                    <a class="socials-link" href="#">
-                      <svg
-                        class="socials-icon instagram"
-                        width="20"
-                        height="20"
-                      >
-                        <use href="./sprite.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="socials-item">
-                    <a class="socials-link" href="#">
-                      <svg
-                        class="socials-icon instagram"
-                        width="20"
-                        height="20"
-                      >
-                        <use href="./sprite.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
+        <div class="hero__wrapper">
+          <div class="container">
+            <h2 class="hero__title">Наша команда</h2>
+            <ul class="hero__box">
 
-            <li class="hero-meta">
-              <img
-                class="hero-foto"
-                src="./images/olgarepina.jpg"
-                alt="жінка в окулярах блондинка"
-                width="270"
-                height="260"
-              />
-              <h3 class="hero-name">Ольга Рєпіна</h3>
-              <p class="hero-text">Frontend Developer</p>
-              <div>
-                <ul class="socials">
-                  <li class="socials-item">
-                    <a class="socials-link" href="#">
-                      <svg
-                        class="socials-icon instagram"
-                        width="20"
-                        height="20"
-                      >
-                        <use href="./sprite.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="socials-item">
-                    <a class="socials-link" href="#">
-                      <svg
-                        class="socials-icon instagram"
-                        width="20"
-                        height="20"
-                      >
-                        <use href="./sprite.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="socials-item">
-                    <a class="socials-link" href="#">
-                      <svg
-                        class="socials-icon instagram"
-                        width="20"
-                        height="20"
-                      >
-                        <use href="./sprite.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="socials-item">
-                    <a class="socials-link" href="#">
-                      <svg
-                        class="socials-icon instagram"
-                        width="20"
-                        height="20"
-                      >
-                        <use href="./sprite.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
+              <li class="hero-meta">
+                <div class="hero-meta__wrap">
+                  <img
+                    class="hero-meta__icon"
+                    src="./images/igordemjanko.jpg"
+                    alt="чоловік в окулярах"
+                    width="270"
+                    height="260"
+                  />
+                  <h3 class="hero-meta__name">Ігор Дем'яненко</h3>
+                  <p class="hero-meta__text">Product Designer</p>
+                  <div>
+                    <ul class="socials">
+                      <div class="socials__box">
+                        <li class="socials__item">
+                          <a class="socials__link" href="#">
+                            <svg
+                              class="socials__icon instagram"
+                              width="20"
+                              height="20"
+                            >
+                              <use href="./sprite.svg#icon-instagram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="socials__item">
+                          <a class="socials__link" href="#">
+                            <svg
+                              class="socials__icon instagram"
+                              width="20"
+                              height="20"
+                            >
+                              <use href="./sprite.svg#icon-twitter"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="socials__item">
+                          <a class="socials__link" href="#">
+                            <svg
+                              class="socials__icon instagram"
+                              width="20"
+                              height="20"
+                            >
+                              <use href="./sprite.svg#icon-facebook"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="socials__item">
+                          <a class="socials__link" href="#">
+                            <svg
+                              class="socials__icon instagram"
+                              width="20"
+                              height="20"
+                            >
+                              <use href="./sprite.svg#icon-linkedin"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </div>
+                    </ul>
+                  </div>
+                </divc>
+              </li>
 
-            <li class="hero-meta">
-              <img
-                class="hero-foto"
-                src="./images/mikolatarasov.jpg"
-                alt="чоловік років 30 в синій сорочці"
-                width="270"
-                height="260"
-              />
-              <h3 class="hero-name">Микола Тарасов</h3>
-              <p class="hero-text">Marketing</p>
-              <div>
-                <ul class="socials">
-                  <li class="socials-item">
-                    <a class="socials-link" href="#">
-                      <svg
-                        class="socials-icon instagram"
-                        width="20"
-                        height="20"
-                      >
-                        <use href="./sprite.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="socials-item">
-                    <a class="socials-link" href="#">
-                      <svg
-                        class="socials-icon instagram"
-                        width="20"
-                        height="20"
-                      >
-                        <use href="./sprite.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="socials-item">
-                    <a class="socials-link" href="#">
-                      <svg
-                        class="socials-icon instagram"
-                        width="20"
-                        height="20"
-                      >
-                        <use href="./sprite.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="socials-item">
-                    <a class="socials-link" href="#">
-                      <svg
-                        class="socials-icon instagram"
-                        width="20"
-                        height="20"
-                      >
-                        <use href="./sprite.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
+              <li class="hero-meta">
+                <div class="hero-meta__wrap">
+                  <img
+                    class="hero-meta__icon"
+                    src="./images/olgarepina.jpg"
+                    alt="жінка в окулярах блондинка"
+                    width="270"
+                    height="260"
+                  />
+                  <h3 class="hero-meta__name">Ольга Рєпіна</h3>
+                  <p class="hero-meta__text">Frontend Developer</p>
+                  <div>
+                    <ul class="socials">
+                        <div class="socials__box">
+                          <li class="socials__item">
+                            <a class="socials__link" href="#">
+                              <svg
+                                class="socials__icon instagram"
+                                width="20"
+                                height="20"
+                              >
+                                <use href="./sprite.svg#icon-instagram"></use>
+                              </svg>
+                            </a>
+                          </li>
+                          <li class="socials__item">
+                            <a class="socials__link" href="#">
+                              <svg
+                                class="socials__icon instagram"
+                                width="20"
+                                height="20"
+                              >
+                                <use href="./sprite.svg#icon-twitter"></use>
+                              </svg>
+                            </a>
+                          </li>
+                          <li class="socials__item">
+                            <a class="socials__link" href="#">
+                              <svg
+                                class="socials__icon instagram"
+                                width="20"
+                                height="20"
+                              >
+                                <use href="./sprite.svg#icon-facebook"></use>
+                              </svg>
+                            </a>
+                          </li>
+                          <li class="socials__item">
+                            <a class="socials__link" href="#">
+                              <svg
+                                class="socials__icon instagram"
+                                width="20"
+                                height="20"
+                              >
+                                <use href="./sprite.svg#icon-linkedin"></use>
+                              </svg>
+                            </a>
+                          </li>
+                        </div>
+                      </ul>
+                  </div>
+                </divcl>
+              </li>
 
-            <li class="hero-meta">
-              <img
-                class="hero-foto"
-                src="./images/mykhailoermakov.jpg"
-                alt="чоловік в окулярах років 30 в чорній футболці"
-                width="270"
-                height="260"
-              />
-              <h3 class="hero-name">Михайло Єрмаков</h3>
-              <p class="hero-text">UI Designer</p>
-              <div>
-                <ul class="socials">
-                  <li class="socials-item">
-                    <a class="socials-link" href="#">
-                      <svg
-                        class="socials-icon instagram"
-                        width="20"
-                        height="20"
-                      >
-                        <use href="./sprite.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="socials-item">
-                    <a class="socials-link" href="#">
-                      <svg
-                        class="socials-icon instagram"
-                        width="20"
-                        height="20"
-                      >
-                        <use href="./sprite.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="socials-item">
-                    <a class="socials-link" href="#">
-                      <svg
-                        class="socials-icon instagram"
-                        width="20"
-                        height="20"
-                      >
-                        <use href="./sprite.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="socials-item">
-                    <a class="socials-link" href="#">
-                      <svg
-                        class="socials-icon instagram"
-                        width="20"
-                        height="20"
-                      >
-                        <use href="./sprite.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
+              <li class="hero-meta">
+                <div class="hero-meta__wrap">
+                  <img
+                    class="hero-meta__icon"
+                    src="./images/mikolatarasov.jpg"
+                    alt="чоловік років 30 в синій сорочці"
+                    width="270"
+                    height="260"
+                  />
+                  <h3 class="hero-meta__name">Микола Тарасов</h3>
+                  <p class="hero-meta__text">Marketing</p>
+                  <div>
+                    <ul class="socials">
+                        <div class="socials__box">
+                          <li class="socials__item">
+                            <a class="socials__link" href="#">
+                              <svg
+                                class="socials__icon instagram"
+                                width="20"
+                                height="20"
+                              >
+                                <use href="./sprite.svg#icon-instagram"></use>
+                              </svg>
+                            </a>
+                          </li>
+                          <li class="socials__item">
+                            <a class="socials__link" href="#">
+                              <svg
+                                class="socials__icon instagram"
+                                width="20"
+                                height="20"
+                              >
+                                <use href="./sprite.svg#icon-twitter"></use>
+                              </svg>
+                            </a>
+                          </li>
+                          <li class="socials__item">
+                            <a class="socials__link" href="#">
+                              <svg
+                                class="socials__icon instagram"
+                                width="20"
+                                height="20"
+                              >
+                                <use href="./sprite.svg#icon-facebook"></use>
+                              </svg>
+                            </a>
+                          </li>
+                          <li class="socials__item">
+                            <a class="socials__link" href="#">
+                              <svg
+                                class="socials__icon instagram"
+                                width="20"
+                                height="20"
+                              >
+                                <use href="./sprite.svg#icon-linkedin"></use>
+                              </svg>
+                            </a>
+                          </li>
+                        </div>
+                      </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="hero-meta">
+                <div class="hero-meta__wrap">
+                  <img
+                    class="hero-meta__icon"
+                    src="./images/mykhailoermakov.jpg"
+                    alt="чоловік в окулярах років 30 в чорній футболці"
+                    width="270"
+                    height="260"
+                  />
+                  <h3 class="hero-meta__name">Михайло Єрмаков</h3>
+                  <p class="hero-meta__text">UI Designer</p>
+                  <div>
+                    <ul class="socials">
+                        <div class="socials__box">
+                          <li class="socials__item">
+                            <a class="socials__link" href="#">
+                              <svg
+                                class="socials__icon instagram"
+                                width="20"
+                                height="20"
+                              >
+                                <use href="./sprite.svg#icon-instagram"></use>
+                              </svg>
+                            </a>
+                          </li>
+                          <li class="socials__item">
+                            <a class="socials__link" href="#">
+                              <svg
+                                class="socials__icon instagram"
+                                width="20"
+                                height="20"
+                              >
+                                <use href="./sprite.svg#icon-twitter"></use>
+                              </svg>
+                            </a>
+                          </li>
+                          <li class="socials__item">
+                            <a class="socials__link" href="#">
+                              <svg
+                                class="socials__icon instagram"
+                                width="20"
+                                height="20"
+                              >
+                                <use href="./sprite.svg#icon-facebook"></use>
+                              </svg>
+                            </a>
+                          </li>
+                          <li class="socials__item">
+                            <a class="socials__link" href="#">
+                              <svg
+                                class="socials__icon instagram"
+                                width="20"
+                                height="20"
+                              >
+                                <use href="./sprite.svg#icon-linkedin"></use>
+                              </svg>
+                            </a>
+                          </li>
+                        </div>
+                      </ul>
+                  </div>
+                </divcl>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <!--клієнти-->
 
       <section class="clients">
-        <h2 class="clients-title">Постійні клієнти</h2>
-        <ul class="clients-box">
-          <li class="clients-meta">
-            <a class="clients-link" href="#"
-              ><svg class="clients-icon" width="106px" height="60px">
-                <use href="./sprite.svg#icon-Logo"></use></svg
-            ></a>
-          </li>
-          <li class="clients-meta">
-            <a class="clients-link" href="#"
-              ><svg class="clients-icon" width="106px" height="60px">
-                <use href="./sprite.svg#icon-Logo-1"></use></svg
-            ></a>
-          </li>
-          <li class="clients-meta">
-            <a class="clients-link" href="#"
-              ><svg class="clients-icon" width="106px" height="60px">
-                <use href="./sprite.svg#icon-Logo-2"></use></svg
-            ></a>
-          </li>
-          <li class="clients-meta">
-            <a class="clients-link" href="#"
-              ><svg class="clients-icon" width="106px" height="60px">
-                <use href="./sprite.svg#icon-Logo-3"></use></svg
-            ></a>
-          </li>
-          <li class="clients-meta">
-            <a class="clients-link" href="#"
-              ><svg class="clients-icon" width="106px" height="60px">
-                <use href="./sprite.svg#icon-Logo-4"></use></svg
-            ></a>
-          </li>
-          <li class="clients-meta">
-            <a class="clients-link" href="#"
-              ><svg class="clients-icon" width="106px" height="60px">
-                <use href="./sprite.svg#icon-Logo-5"></use></svg
-            ></a>
-          </li>
-        </ul>
+        <div class="clients__wrapper">
+          <h2 class="clients__title">Постійні клієнти</h2>
+          <ul class="clients__box">
+            <li class="clients__meta">
+              <a class="clients__link" href="#"
+                ><svg class="clients__icon" width="106px" height="60px">
+                  <use href="./sprite.svg#icon-Logo"></use></svg
+              ></a>
+            </li>
+            <li class="clients__meta">
+              <a class="clients__link" href="#"
+                ><svg class="clients__icon" width="106px" height="60px">
+                  <use href="./sprite.svg#icon-Logo-1"></use></svg
+              ></a>
+            </li>
+            <li class="clients__meta">
+              <a class="clients__link" href="#"
+                ><svg class="clients__icon" width="106px" height="60px">
+                  <use href="./sprite.svg#icon-Logo-2"></use></svg
+              ></a>
+            </li>
+            <li class="clients__meta">
+              <a class="clients__link" href="#"
+                ><svg class="clients__icon" width="106px" height="60px">
+                  <use href="./sprite.svg#icon-Logo-3"></use></svg
+              ></a>
+            </li>
+            <li class="clients__meta">
+              <a class="clients__link" href="#"
+                ><svg class="clients__icon" width="106px" height="60px">
+                  <use href="./sprite.svg#icon-Logo-4"></use></svg
+              ></a>
+            </li>
+            <li class="clients__meta">
+              <a class="clients__link" href="#"
+                ><svg class="clients__icon" width="106px" height="60px">
+                  <use href="./sprite.svg#icon-Logo-5"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
