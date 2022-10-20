@@ -5,11 +5,11 @@
   line-height: 1.19;
   text-decoration: none;
 
-  color: var(--color-logo-primary);
+  color: var($color-logo-primary);
 }
 
 .logo__item {
-  color: var(--accent-color);
+  color: var($accent-color);
 }
 
 .logo__header {
@@ -23,7 +23,7 @@
 .logo__footer {
   display: inline-block;
   text-decoration: none;
-  color: #ffffff;
+  color: var($footer-primary-text-color);
   margin-right: 0px;
   margin-bottom: 20px;
 }

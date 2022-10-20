@@ -1,6 +1,6 @@
 .peage-footer__wrapper {
   padding: 60px 0;
-  background-color: var(--color-bg-promo-footer);
+  background-color: var($color-bg-promo-footer);
 }
 
 .peage-footer__container {
@@ -18,7 +18,7 @@
   text-transform: uppercase;
   margin-bottom: 20px;
 
-  color: #ffffff;
+  color: var($footer-primary-text-color);
 }
 
 .socials-footer__box {
@@ -41,12 +41,54 @@
 
 .socials-footer__link:hover,
 .socials-footer__link:focus {
-  background-color: var(--accent-color);
+  background-color: var($accent-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-footer__icon {
   width: 20px;
   height: 20px;
-  fill: var(--secondary-color-socials);
+  fill: var($secondary-color-socials);
+}
+
+.mailing-footer__title {
+  font-family: "Roboto" sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  color: var($footer-primary-text-color);
+}
+
+.mailing-footer__box {
+  display: flex;
+}
+
+.mailing-footer__row {
+  width: 358px;
+  height: 50px;
+}
+
+.mailing-footer__input {
+  width: 358px;
+  height: 50px;
+  margin: 0;
+  padding: 15px 16px;
+  background-color: var($color-bg-promo-footer);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mailing-footer__input:hover,
+.mailing-footer__input:focus {
+  color: #ffffff;
+  border-color: var($accent-color);
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

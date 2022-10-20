@@ -8,3 +8,46 @@
 @import "./components/portfolio-main";
 @import "./components/peage-footer";
 @import "./components/modal";
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background-color: var($primary-color-bacground);
+  color: var($primary-color-text);
+}
+
+p,
+a,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0;
+}
+
+ul {
+  margin: 0 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* удалення крапочок напроти пунктів списку */
+ul {
+  list-style: none;
+}
+
+.container {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
