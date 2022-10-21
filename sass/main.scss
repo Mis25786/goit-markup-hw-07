@@ -13,8 +13,8 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
-  background-color: var($primary-color-bacground);
-  color: var($primary-color-text);
+  background-color: $primary-color-bacground;
+  color: $primary-color-text;
 }
 
 p,
