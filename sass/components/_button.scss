@@ -9,7 +9,7 @@
   line-height: 1.88;
   letter-spacing: 0.06em;
 
-  background-color: var($accent-color);
+  background-color: $accent-color;
   color: var($color-text-promo);
   border-color: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -18,8 +18,8 @@
 
 .promo__button:hover,
 .promo__button:focus {
-  background-color: var($buttom-secondary-color);
-  color: var($color-text-promo);
+  background-color: $buttom-secondary-color;
+  color: $color-text-promo;
 }
 
 .footer-button__btn {
@@ -39,7 +39,7 @@
   letter-spacing: 0.06em;
 
   color: #ffffff;
-  background: var($accent-color);
+  background: $accent-color;
 
   border-radius: 4px;
   border-color: transparent;
@@ -50,7 +50,7 @@
 
 .footer-button__btn:hover,
 .footer-button__btn:focus {
-  background-color: var($buttom-secondary-color);
+  background-color: $buttom-secondary-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
